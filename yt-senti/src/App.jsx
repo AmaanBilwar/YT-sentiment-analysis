@@ -6,6 +6,11 @@ import basicFunc from './basicFunc'
 
 function App() {
 
+
+  let button=document.getElementById('test')
+  button.addEventListener('click',()=>{
+    console.log('button works')
+  })
   
   return (
     <>
