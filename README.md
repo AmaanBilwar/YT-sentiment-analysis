@@ -1,6 +1,6 @@
-### YT-sentiment-analysis
-
-### YOUTUBE SENTIMENT ANALYSIS
 
 
-# how the app works
+# YOUTUBE SENTIMENT ANALYSIS
+
+
+###  how the app works
