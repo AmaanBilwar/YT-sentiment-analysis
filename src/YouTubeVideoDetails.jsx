@@ -13,7 +13,7 @@ const YouTubeVideoDetails = () => {
     const videoUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&id=${videoId}&key=${import.meta.env.VITE_API_KEY }`;
 
 
-    console.log(import.meta.env.VITE_REACT_KEY);
+    // console.log(import.meta.env.VITE_REACT_KEY);
 
     fetch(videoUrl)
       .then(response => response.json())
