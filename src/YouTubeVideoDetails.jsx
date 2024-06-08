@@ -7,7 +7,7 @@ const YouTubeVideoDetails = () => {
 
   
 
-  const videoId = 'cWWu5IjMuEU';
+  const videoId = document.getElementById('videoId').value || 'cWWu5IjMuEU';
 
   const getVideoDetails = () => {
     const videoUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,statistics&id=${videoId}&key=${import.meta.env.VITE_API_KEY }`;
@@ -37,7 +37,8 @@ const YouTubeVideoDetails = () => {
 
   return (
     <div>
-      <button onClick={getVideoDetails}>Get Video Details</button>
+      <input type="text" id='videoId' placeholder='enter yt id'/>
+      <button onClick={getVideoDetails}>Get Video Details(double click)</button>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {videoDetails && (
         <div>
