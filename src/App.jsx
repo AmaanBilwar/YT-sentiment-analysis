@@ -1,31 +1,13 @@
-import React from 'react'
-import './App.css'
-import basicFunc from './basicFunc'
+import React from 'react';
+import YouTubeVideoDetails from './YouTubeVideoDetails';
+import Content from '../Content';
 
 
-
-function App() {
-
-
-  let button=document.getElementById('test')
-  button.addEventListener('click',()=>{
-    console.log('button works')
-  })
-  
-  return (
-    <>
-      
-<h1>Youtube Sentiment analysis</h1>
-<div >
-  <form >
-    <input  type='url' placeholder='Enter the link here' />
-  </form>
+const App = () => (
+  <div>
+    <Content />
+    <YouTubeVideoDetails />
   </div>
-  <div id='button'>
-    <button id='test' onClick={basicFunc()} className='p-2 rounded bg-orange-50'>Submit</button>
-    </div>
-    </>
-  )
-}
+);
 
-export default App
+export default App;
