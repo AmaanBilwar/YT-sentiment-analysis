@@ -2,13 +2,16 @@ import React from 'react';
 import YouTubeVideoDetails from './YouTubeVideoDetails';
 import Content from '../Content';
 import YoutubeComments from './YoutubeComments';
-
+import TEST from './newtestone';
 
 const App = () => (
   <div>
     <Content />
-    <YouTubeVideoDetails />
-    <YoutubeComments />
+    <TEST />
+    {/* <YouTubeVideoDetails /> */}
+    {/* <YoutubeComments /> */}
+
+    {/* <youtubeComments /> */}
   </div>
 );
 
