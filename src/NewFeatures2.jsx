@@ -1,16 +1,16 @@
-import React from 'react'
+// import React from 'react'
 
-const NewFeatures2 = () => {
+// const NewFeatures2 = () => {
 
 
 
 
     
-  return (
-    <div>
+//   return (
+//     <div>
       
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default NewFeatures2
+// export default NewFeatures2
