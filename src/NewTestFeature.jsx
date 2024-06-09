@@ -56,22 +56,29 @@ const YouTubeVideoDetails = () => {
 
   return (
     <div>
-      <input
+      <div  className='pt-6 flex justify-center align-center' >
+      <input className='w-1/2 p-1 bg-gray-100 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent'
         type="text"
         value={videoLink}
         onChange={(e) => setVideoLink(e.target.value)}
         placeholder="Enter YouTube Video Link"
       />
-      <button onClick={getVideoDetails} disabled={loading}>
+    </div>
+    <div className='flex justify-center align-center pt-4'>
+      <button className=' flex items-center bg-sky-500 hover:bg-sky-700 rounded-full p-3 ' onClick={getVideoDetails} disabled={loading}>
         {loading ? 'Loading...' : 'Get Video Details'}
       </button>
+    </div>
+      
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {videoDetails && (
+        
+ 
         <div>
-          <h3>Video Title: {videoDetails.snippet.title}</h3>
-          <p>Video Description: {videoDetails.snippet.description}</p>
-          <p>View Count: {videoDetails.statistics?.viewCount}</p>
-          <p>Like Count: {videoDetails.statistics?.likeCount}</p>
+          <h3 className='text-center pt-8 pb-3'>Video Title: {videoDetails.snippet.title}</h3>
+          <p className='text-center p-4'>Video Description: {videoDetails.snippet.description}</p>
+          <p className='text-center p-2'>View Count: {videoDetails.statistics?.viewCount}</p>
+          <p className='text-center p-2'>Like Count: {videoDetails.statistics?.likeCount}</p>
         </div>
       )}
     </div>
