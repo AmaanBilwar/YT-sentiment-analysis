@@ -6,7 +6,7 @@
 ## what the app can do
 
 
-can throw out summary 
-can throw out transcription 
-can throw out comments' sentiment analysis
-can throw out video sentminet analysis
+can throw out summary <br />
+can throw out transcription <br />
+can throw out comments' sentiment analysis <br />
+can throw out video sentminet analysis <br />
